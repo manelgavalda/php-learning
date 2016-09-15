@@ -1,9 +1,5 @@
 <?php
 
-$greeting = "Hola mon!";
+$greeting ="Hola %_GET['name']!";
 
-echo "Hola Mon!";
-
-$name="";
-
-echo "Hola" . $name . "!";
+require 'index.template.php';
