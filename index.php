@@ -88,13 +88,24 @@
 require 'funcions.php';
 
 require 'Task.php';
-
 // PDO: Php Data Objects. Library/Biblioteca
 
 //De moment ho farem sense contrasenya per no guardar-la al github.
-$pdo = new PDO('mysql:host=127.0.0.1;dbname=prova','root','');
+//Per no ficar un condicional fem servir prova i captura.
+try{
+    $pdo = new PDO('mysql:host=127.0.0.1;dbname=prova','root','');
+} catch (PDOException $e){
+    die("Ha hagut un error durant la connexió: Missatge:" .$e->getMessage());
+}
 
-require 'index.template.php';
+
+$query = $pdo->prepare('SELECT * FROM todos');
+
+$query->execute();
+
+var_dump($query->fetchAll());
+
+//require 'index.template.php';
 
 
 
