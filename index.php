@@ -1,5 +1,4 @@
 <?php
-
 //$greeting = "Hola" . %_GET['name'] . "!";
 //
 //require 'index.template.php';
@@ -64,15 +63,37 @@
 // $v_names =
 //
 // Tabulant al fore ens donaria el template del foreach.
-
 //Per exemple la funció copy ens retorna un boolea. True si ha sigut correctament.
 //Espera un string amb el path d'origen i una destinació, amb un paràmetre opcional
 //Entre corxetes és opcional.
 //copy($src,$dst);
 
-
-
 require 'funcions.php';
-require 'index.template.php';
 
-hello2("Manel","");
+require 'Task.php';
+
+
+//POJO
+//POPO
+//PLAIN OLD OBJECT
+//CONTENEDOR / ESTRUCTURA DE DADES
+
+$task = new Task("Aprendre PHP");
+
+var_dump($task->description);
+var_dump($task->completed);
+
+//$task = new Task("Netejar habitació",false);
+//$task = new Task("Comprar pa",false);
+//$task = new Task("Sortir més");
+
+
+//$task2 = new Task;
+//$task1 = new Task;
+
+//$task = new Task();
+$task->complete();
+//$task->completed =true;
+echo $task->completed?;
+var_dump($task);
+//require 'index.template.php';
