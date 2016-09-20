@@ -67,33 +67,34 @@
 //Espera un string amb el path d'origen i una destinació, amb un paràmetre opcional
 //Entre corxetes és opcional.
 //copy($src,$dst);
-
-require 'funcions.php';
-
-require 'Task.php';
-
-
 //POJO
 //POPO
 //PLAIN OLD OBJECT
 //CONTENEDOR / ESTRUCTURA DE DADES
-
-$task = new Task("Aprendre PHP");
-
-var_dump($task->description);
-var_dump($task->completed);
-
+//$task = new Task("Aprendre PHP");
+//var_dump($task->description);
+//var_dump($task->completed);
 //$task = new Task("Netejar habitació",false);
 //$task = new Task("Comprar pa",false);
 //$task = new Task("Sortir més");
-
-
 //$task2 = new Task;
 //$task1 = new Task;
-
 //$task = new Task();
-$task->complete();
+//$task->complete();
 //$task->completed =true;
-echo $task->completed?;
-var_dump($task);
+//echo $task->completed?;
+//var_dump($task);
 //require 'index.template.php';
+require 'funcions.php';
+
+require 'Task.php';
+
+// PDO: Php Data Objects. Library/Biblioteca
+
+//De moment ho farem sense contrasenya per no guardar-la al github.
+$pdo = new PDO('mysql:host=127.0.0.1;dbname=prova','root','');
+
+require 'index.template.php';
+
+
+

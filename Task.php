@@ -1,6 +1,9 @@
 <?php
 //Classe: Característiques dels objectes. Funció màgica de PHP.
-
+/*
+ * POPO: Plain Old PHP Object | Contenedor de tasques | Model
+ * Emmagatzema una tasca.
+ */
 class Task {
 
     public $description;
