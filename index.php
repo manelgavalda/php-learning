@@ -93,6 +93,10 @@ require 'database/Connection.php';
 
 require 'database/QueryBuilder.php';
 
+$config = require 'config/database.php';
+
+$message = require 'config/message.php';
+
 $config = [
     'dbtype'      => 'mysql',
     'dbname'     => 'prova',
