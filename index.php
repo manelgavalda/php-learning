@@ -88,24 +88,41 @@
 require 'funcions.php';
 
 require 'Task.php';
+
+require 'database/Connection.php';
+
+require 'database/QueryBuilder.php';
+
+$config = [
+    'dbtype'      => 'mysql',
+    'dbname'     => 'prova',
+    'username' => 'root',
+    'password' => '',
+    'host' => '127.0.0.1'
+];
+//Vista ja que és el resultat del codi i el que veu l'usuari.
 // PDO: Php Data Objects. Library/Biblioteca
 
 //De moment ho farem sense contrasenya per no guardar-la al github.
 //Per no ficar un condicional fem servir prova i captura.
+/*
 try{
     $pdo = new PDO('mysql:host=127.0.0.1;dbname=prova','root','');
 } catch (PDOException $e){
     die("Ha hagut un error durant la connexió: Missatge:" .$e->getMessage());
 }
+*/
+$pdo = Connection::make($config);
 
+$query=new QueryBuilder($pdo);
+$tasks = $query->all('todos');
+//$query = $pdo->prepare('SELECT * FROM todos');
 
-$query = $pdo->prepare('SELECT * FROM todos');
+//$query->execute();
 
-$query->execute();
+//var_dump($query->fetchAll());
 
-var_dump($query->fetchAll());
-
-//require 'index.template.php';
+require 'index.template.php';
 
 
 
