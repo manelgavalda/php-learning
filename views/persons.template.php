@@ -9,9 +9,15 @@
 </head>
 <body>
 
-<?php require 'menu.php' ?>
+    <?php require 'menu.php' ?>
 
-Lorem ipsum dolar dit amet, about
+    <ul>
+        <?php foreach ($persons as $person) : ?>
+            <li>
+            <?= $person->LastName ?>
+            </li>
+        <?php endforeach;?>
+    </ul>
 
 </body>
 </html>

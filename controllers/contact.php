@@ -9,15 +9,9 @@
 </head>
 <body>
 
-<?php require 'menu.php' ?>
+    <?php require 'views/menu.php' ?>
 
-    <ul>
-        <?php foreach ($tasks as $task) : ?>
-            <li>
-                <?= $task->description ?>
-            </li>
-        <?php endforeach;?>
-    </ul>
+    Lorem ipsum dolar dit amet, contact
 
 </body>
 </html>

@@ -1,5 +1,7 @@
-<!doctype html>
-<html lang="en">
+<?php require 'menu.php' ?>
+
+        <!doctype html>
+        <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -8,10 +10,14 @@
     <title>Document</title>
 </head>
 <body>
-
-<?php require 'menu.php' ?>
-
-Lorem ipsum dolar dit amet, contact
+Lorem.
+<ul>
+    <?php foreach ($tasks as $task) : ?>
+        <li>
+            <?= $task->description ?>
+        </li>
+    <?php endforeach;?>
+</ul>
 
 </body>
 </html>

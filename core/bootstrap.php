@@ -106,6 +106,8 @@
 //$query->execute();
 //var_dump($query->fetchAll());
 //DRY DONT REPEAT YOURSELF WET WRITE EVERYTHING TWICE
+//MVC Model Vista Controlador
+//FC Front Controller El index s'encarregarà de tot.
 require 'funcions.php';
 
 require 'Models/Task.php';
