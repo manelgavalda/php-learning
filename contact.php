@@ -11,13 +11,7 @@
 
 <?php require 'menu.php' ?>
 
-    <ul>
-        <?php foreach ($persons as $person) : ?>
-            <li>
-            <?= $person->LastName ?>
-            </li>
-        <?php endforeach;?>
-    </ul>
+Lorem ipsum dolar dit amet, contact
 
 </body>
 </html>

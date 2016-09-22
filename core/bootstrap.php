@@ -108,7 +108,7 @@
 //DRY DONT REPEAT YOURSELF WET WRITE EVERYTHING TWICE
 require 'funcions.php';
 
-require 'Task.php';
+require 'Models/Task.php';
 
 require 'database/Connection.php';
 
