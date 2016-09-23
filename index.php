@@ -2,23 +2,25 @@
 
 
 require 'core/bootstrap.php';
-
-require 'routes.php';
-
+require 'core/Request.php';
+require 'core/Router.php';
+// Programació orientada a objecte.
+// Treballarem amb la request pel anvegador. HTTP -> Request -> Response
+//$request new Request;
+//$uri = $request->uri();
 //Per evitar indicar totes les URLs amb les /.
-$uri = trim($_SERVER['REQUEST_URI'],'/');
+//trim($_SERVER['REQUEST_URI'],'/');
+//require 'index.template.php';
+//$tasks = $query->all('todos');
+//require 'index.template.php';
+//Expresivitat
+//$router->direct($uri);
 
-if (array_key_exists($uri,$routes)) {
-    require $routes[$uri];
-} else {
-        throw new Exception("No s'ha trobat la ruta");
-}
+$routes = require 'routes.php';
 
+//$uri= Request::uri();
+//$router = new Router;
+//$router->define($routes);
+//require $router->direct($uri);
 
-
-
-/*
-require 'index.template.php';
-$tasks = $query->all('todos');
-require 'index.template.php';
-*/
+require Router::load('routes.php')->direct(Request::uri());

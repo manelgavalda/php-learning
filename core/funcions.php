@@ -17,3 +17,10 @@ function printArgs($args) {
 function sum () {
     return array_sum(func_get_args());
 }
+
+//Funció per obtenir la uri.
+/*
+function uri() {
+    return trim($_SERVER['REQUEST_URI'],'/');
+}
+*/
