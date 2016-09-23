@@ -1,8 +1,7 @@
 <?php require 'menu.php' ?>
 
-<?php require '../core/partials/headers.php' ?>
+<?php require 'core/partials/headers.php' ?>
 
-Lorem.
 <ul>
     <?php foreach ($tasks as $task) : ?>
         <li>
@@ -11,4 +10,4 @@ Lorem.
     <?php endforeach;?>
 </ul>
 
-<?php require '../core/partials/footers.php' ?>
+<?php require 'core/partials/footers.php' ?>
