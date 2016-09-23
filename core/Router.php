@@ -31,6 +31,7 @@ class Router
      * @param $uri
      * @throws Exception
      */
+
     public function direct($uri)
     {
         //Redirigim l'usuari segons la seva URI.
