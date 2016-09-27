@@ -4,6 +4,10 @@
  * POPO: Plain Old PHP Object | Contenedor de tasques | Model
  * Emmagatzema una tasca.
  */
+
+//namespace afegit
+namespace Manelgavalda;
+
 class Task {
 
     public $description;

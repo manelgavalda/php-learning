@@ -120,6 +120,6 @@ $config = require 'config/database.php';
 
 $message = require 'config/message.php';
 
-$pdo = Connection::make($config,$message);
+$pdo = connection::make($config,$message);
 
 $query=new QueryBuilder($pdo);

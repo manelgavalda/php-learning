@@ -1,5 +1,8 @@
 <?php
 
+//namespace afegit
+namespace Manelgavalda;
+
 class Request
 {
     public static function uri() {

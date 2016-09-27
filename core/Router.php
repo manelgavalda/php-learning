@@ -3,6 +3,10 @@
 /**
  * Class Router
  */
+
+//namespace afegit
+namespace Manelgavalda;
+
 class Router
 {
     /**

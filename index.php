@@ -23,4 +23,4 @@ $routes = require 'routes.php';
 //$router->define($routes);
 //require $router->direct($uri);
 
-require Router::load('routes.php')->direct(Request::uri());
+require Manelgavalda\Router::load('routes.php')->direct(Manelgavalda\Request::uri());

@@ -7,6 +7,10 @@
  * Time: 18:19
  */
 //Constructor, getters i setters generats automàticament. alt+insert.
+
+//namespace afegit
+namespace Manelgavalda;
+
 class Person
 {
     public $name;
