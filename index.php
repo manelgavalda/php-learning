@@ -1,9 +1,9 @@
 <?php
 
 
-require 'core/bootstrap.php';
-require 'core/Request.php';
-require 'core/Router.php';
+require 'src/core/bootstrap.php';
+require 'src/core/Request.php';
+require 'src/core/Router.php';
 // Programació orientada a objecte.
 // Treballarem amb la request pel anvegador. HTTP -> Request -> Response
 //$request new Request;

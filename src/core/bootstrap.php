@@ -122,6 +122,6 @@ $config = require 'config/database.php';
 
 $message = require 'config/message.php';
 
-$pdo = connection::make($config,$message);
+$pdo = Manelgavalda\connection::make($config,$message);
 
 $query=new QueryBuilder($pdo);
