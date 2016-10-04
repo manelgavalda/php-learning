@@ -114,6 +114,8 @@ require 'Models/Task.php';
 
 require 'database/Connection.php';
 
+use Manelgavalda\QueryBuilder as QueryBuilder;
+
 require 'database/QueryBuilder.php';
 
 $config = require 'config/database.php';
