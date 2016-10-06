@@ -1,2 +1,2 @@
 <?php
-require "views/about.template.php";
+require "src/views/about.template.php";

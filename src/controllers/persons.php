@@ -2,4 +2,4 @@
 
 $persons = $query->all('Persons');
 
-require 'views/persons.template.php';
+require 'src/views/persons.template.php';

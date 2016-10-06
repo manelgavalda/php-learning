@@ -1,4 +1,4 @@
-<?php require 'core/partials/headers.php' ?>
+<?php require 'src/core/partials/headers.php' ?>
 
     <?php require 'menu.php' ?>
 
@@ -10,4 +10,4 @@
 
 </form>
 
-<?php require 'core/partials/footers.php' ?>
+<?php require 'src/core/partials/footers.php' ?>

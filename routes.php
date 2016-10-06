@@ -1,10 +1,10 @@
 <?php
 
 return [
-    ''              => 'controllers/tasks.php',
-    'persons'       => 'controllers/persons.php',
-    'about'         => 'controllers/about.php',
-    'contact'       => 'controllers/contact.php',
-    'addperson'    => 'controllers/addperson.php',
-    'names'         => 'controllers/names.php',
+    ''              => 'src/controllers/tasks.php',
+    'persons'       => 'src/controllers/persons.php',
+    'about'         => 'src/controllers/about.php',
+    'contact'       => 'src/controllers/contact.php',
+    'addperson'    => 'src/controllers/addperson.php',
+    'names'         => 'src/controllers/names.php',
 ];

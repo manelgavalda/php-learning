@@ -1,2 +1,2 @@
 <?php
-require "views/contact.template.php";
+require "src/views/contact.template.php";

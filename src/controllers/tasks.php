@@ -2,4 +2,4 @@
 
 $tasks = $query->all('todos');
 
-require 'views/tasks.template.php';
+require 'src/views/tasks.template.php';

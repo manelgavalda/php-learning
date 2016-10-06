@@ -1,2 +1,2 @@
 <?php
-require "views/addperson.template.php";
+require "src/views/addperson.template.php";

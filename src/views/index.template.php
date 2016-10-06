@@ -1,6 +1,6 @@
 <?php require 'menu.php' ?>
 
-<?php require 'core/partials/headers.php' ?>
+<?php require 'src/core/partials/headers.php' ?>
 
 <ul>
     <?php foreach ($tasks as $task) : ?>
@@ -10,4 +10,4 @@
     <?php endforeach;?>
 </ul>
 
-<?php require 'core/partials/footers.php' ?>
+<?php require 'src/core/partials/footers.php' ?>
