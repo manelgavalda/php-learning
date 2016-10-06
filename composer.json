@@ -10,6 +10,6 @@
     ],
     "require": {},
     "autoload": {
-        "psr-4": {"Manel\\" :"src/"}
+        "psr-4": {"Manelgavalda\\myframework\\" :"src/"}
     }
 }

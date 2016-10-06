@@ -9,7 +9,7 @@
 //Constructor, getters i setters generats automàticament. alt+insert.
 
 //namespace afegit
-namespace Manelgavalda;
+namespace Manelgavalda\myframework;
 
 class Person
 {

@@ -114,7 +114,7 @@ require 'Models/Task.php';
 
 require 'database/Connection.php';
 
-use Manelgavalda\QueryBuilder as QueryBuilder;
+use Manelgavalda\myframework\QueryBuilder as QueryBuilder;
 
 require 'database/QueryBuilder.php';
 
@@ -122,6 +122,6 @@ $config = require 'config/database.php';
 
 $message = require 'config/message.php';
 
-$pdo = Manelgavalda\connection::make($config,$message);
+$pdo = Manelgavalda\myframework\connection::make($config,$message);
 
 $query=new QueryBuilder($pdo);

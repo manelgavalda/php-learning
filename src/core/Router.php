@@ -5,7 +5,7 @@
  */
 
 //namespace afegit
-namespace Manelgavalda;
+namespace Manelgavalda\myframework;
 
 class Router
 {
