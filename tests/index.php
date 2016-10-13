@@ -24,10 +24,8 @@ $routes = require 'routes.php';
 //require $router->direct($uri);
 
 require Manelgavalda\myframework\Router::load('routes.php')->direct(Manelgavalda\myframework\Request::uri());
-*/
+
 $url = 'http://username:password@hostname:9090/path?arg=value#anchor';
-
-
 
 var_dump(parse_url($url));
 
@@ -46,5 +44,6 @@ var_dump(parse_url($url, PHP_URL_PATH));
 var_dump(parse_url($url, PHP_URL_QUERY));
 
 var_dump(parse_url($url, PHP_URL_FRAGMENT));
-
+*/
+echo"Hola món";
 ?>
