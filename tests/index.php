@@ -1,9 +1,8 @@
 <?php
+require '../src/core/bootstrap.php';
+use Manelgavalda\myframework\core\Request;
+use Manelgavalda\myframework\core\Router;
 /*
-
-require 'src/core/bootstrap.php';
-require 'src/core/Request.php';
-require 'src/core/Router.php';
 // Programació orientada a objecte.
 // Treballarem amb la request pel anvegador. HTTP -> Request -> Response
 //$request new Request;
@@ -23,27 +22,27 @@ $routes = require 'routes.php';
 //$router->define($routes);
 //require $router->direct($uri);
 
-require Manelgavalda\myframework\Router::load('routes.php')->direct(Manelgavalda\myframework\Request::uri());
-
-$url = 'http://username:password@hostname:9090/path?arg=value#anchor';
-
-var_dump(parse_url($url));
-
-var_dump(parse_url($url, PHP_URL_SCHEME));
-
-var_dump(parse_url($url, PHP_URL_USER));
-
-var_dump(parse_url($url, PHP_URL_PASS));
-
-var_dump(parse_url($url, PHP_URL_HOST));
-
-var_dump(parse_url($url, PHP_URL_PORT));
-
-var_dump(parse_url($url, PHP_URL_PATH));
-
-var_dump(parse_url($url, PHP_URL_QUERY));
-
-var_dump(parse_url($url, PHP_URL_FRAGMENT));
+//$url = 'http://username:password@hostname:9090/path?arg=value#anchor';
+//
+//var_dump(parse_url($url));
+//
+//var_dump(parse_url($url, PHP_URL_SCHEME));
+//
+//var_dump(parse_url($url, PHP_URL_USER));
+//
+//var_dump(parse_url($url, PHP_URL_PASS));
+//
+//var_dump(parse_url($url, PHP_URL_HOST));
+//
+//var_dump(parse_url($url, PHP_URL_PORT));
+//
+//var_dump(parse_url($url, PHP_URL_PATH));
+//
+//var_dump(parse_url($url, PHP_URL_QUERY));
+//
+//var_dump(parse_url($url, PHP_URL_FRAGMENT));
+//
+//echo"Hola món";
 */
-echo"Hola món";
-?>
+
+require Router::load('routes.php')->direct(Request::uri());

@@ -5,7 +5,12 @@
  */
 
 //namespace afegit
-namespace Manelgavalda\myframework;
+
+namespace Manelgavalda\myframework\core;
+
+use Exception;
+
+
 
 class Router
 {

@@ -1,7 +1,7 @@
 <?php
 
 //namespace afegit
-namespace Manelgavalda\myframework;
+namespace Manelgavalda\myframework\core;
 
 class Request
 {

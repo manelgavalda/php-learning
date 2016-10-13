@@ -6,7 +6,8 @@
  */
 
 //namespace afegit
-namespace Manelgavalda\myframework;
+
+namespace Manelgavalda\myframework\core\Models;
 
 class Task {
 
