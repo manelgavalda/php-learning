@@ -30,7 +30,7 @@ class QueryBuilder {
         return $query->fetchAll(PDO::FETCH_CLASS | PDO::FETCH_PROPS_LATE, Task::class);
     }
 
-    function adduser($name,$table)
+    function adduser($table,$name)
     {
         $query = $this->pdo->prepare("INSERT INTO {$table} (FirstName) VALUES ('{$name}')");
         $query->execute();
