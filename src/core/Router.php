@@ -6,7 +6,7 @@
 
 //namespace afegit
 
-namespace Manelgavalda\myframework\core;
+namespace Manelgavalda\Myframework\core;
 
 use Exception;
 

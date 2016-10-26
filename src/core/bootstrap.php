@@ -109,16 +109,21 @@
 //MVC Model Vista Controlador
 //FC Front Controller El index s'encarregarà de tot.
 require 'funcions.php';
-
+//
 require 'Models/Task.php';
-
+//
 require 'database/Connection.php';
-
+//
 require 'database/QueryBuilder.php';
 
-use Manelgavalda\myframework\core\database\QueryBuilder;
+require 'Router.php';
 
-use Manelgavalda\myframework\core\database\Connection;
+require 'Request.php';
+
+
+use Manelgavalda\Myframework\core\database\QueryBuilder;
+
+use Manelgavalda\Myframework\core\database\Connection;
 
 $config = require 'config/database.php';
 

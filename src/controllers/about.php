@@ -1,2 +1,2 @@
 <?php
-require "src/views/about.template.php";
+require __DIR__ .'/../views/about.template.php';

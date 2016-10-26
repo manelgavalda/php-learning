@@ -1,4 +1,4 @@
-<?php require 'src/core/partials/headers.php'; ?>
+<?php require __DIR__ .'/../core/partials/headers.php'; ?>
 
     <?php require 'menu.php' ?>
 
@@ -10,4 +10,4 @@
         <?php endforeach;?>
     </ul>
 
-<?php require 'src/core/partials/footers.php' ?>
+<?php require __DIR__ .'/../core/partials/footers.php' ?>

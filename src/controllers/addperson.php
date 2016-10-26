@@ -1,2 +1,2 @@
 <?php
-require "src/views/addperson.template.php";
+require __DIR__ .'/../views/addperson.template.php';
