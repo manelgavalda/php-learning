@@ -108,17 +108,20 @@
 //DRY DONT REPEAT YOURSELF WET WRITE EVERYTHING TWICE
 //MVC Model Vista Controlador
 //FC Front Controller El index s'encarregarà de tot.
-require 'funcions.php';
-//
-require 'Models/Task.php';
-//
-require 'database/Connection.php';
-//
-require 'database/QueryBuilder.php';
 
-require 'Router.php';
+require "./vendor/autoload.php";
 
-require 'Request.php';
+//require 'funcions.php';
+
+//require 'Models/Task.php';
+
+//require 'database/Connection.php';
+
+//require 'database/QueryBuilder.php';
+
+//require 'Router.php';
+
+//require 'Request.php';
 
 
 use Manelgavalda\Myframework\core\database\QueryBuilder;
