@@ -109,7 +109,6 @@
 //MVC Model Vista Controlador
 //FC Front Controller El index s'encarregarà de tot.
 
-require "./vendor/autoload.php";
 
 //require 'funcions.php';
 
@@ -123,6 +122,7 @@ require "./vendor/autoload.php";
 
 //require 'Request.php';
 
+require "./vendor/autoload.php";
 
 use Manelgavalda\Myframework\core\database\QueryBuilder;
 
