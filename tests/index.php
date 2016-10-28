@@ -1,7 +1,7 @@
 <?php
-require __DIR__ . '/../src/core/bootstrap.php';
 
 use Manelgavalda\Myframework\core\Request;
 use Manelgavalda\Myframework\core\Router;
 
-require Router::load('./tests/routes.php')->direct(Request::uri());
+require __DIR__ .'/../vendor/manelgavalda/php-learning/src/core/bootstrap.php';
+require Router::load(__DIR__ .'/routes.php')->direct(Request::uri());

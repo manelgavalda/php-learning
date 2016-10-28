@@ -112,7 +112,7 @@
 
 //require 'funcions.php';
 
-//require 'Models/Task.php';
+//require 'models/Task.php';
 
 //require 'database/Connection.php';
 
@@ -122,13 +122,16 @@
 
 //require 'Request.php';
 
-require "./vendor/autoload.php";
+require __DIR__ ."/../../../../autoload.php";
 
 use Manelgavalda\Myframework\core\database\QueryBuilder;
 
 use Manelgavalda\Myframework\core\database\Connection;
 
-$config = require 'config/database.php';
+
+
+
+$config = require __DIR__ .'/../../../../../tests/database.php';
 
 $message = require 'config/message.php';
 
