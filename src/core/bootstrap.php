@@ -109,11 +109,10 @@
 //MVC Model Vista Controlador
 //FC Front Controller El index s'encarregarà de tot.
 
-require "./vendor/autoload.php";
 
 //require 'funcions.php';
 
-//require 'Models/Task.php';
+//require 'models/Task.php';
 
 //require 'database/Connection.php';
 
@@ -123,12 +122,16 @@ require "./vendor/autoload.php";
 
 //require 'Request.php';
 
+require __DIR__ ."/../../../../autoload.php";
 
 use Manelgavalda\Myframework\core\database\QueryBuilder;
 
 use Manelgavalda\Myframework\core\database\Connection;
 
-$config = require 'config/database.php';
+
+
+
+$config = require __DIR__ .'/../../../../../tests/database.php';
 
 $message = require 'config/message.php';
 

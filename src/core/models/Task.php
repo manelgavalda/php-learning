@@ -16,13 +16,14 @@ class Task {
     //Encapsular no deixa accedir a completed i obliga a fer servir
     // la funció per no cagar-la.
     protected $completed;
-
+/*
     public function __construct($description, $completed) {
         //This per cridar pròpia classe i accedir a les funcions,
         // propietats,etc.. dels objectes.
         $this->description = $description;
         $this->completed = $completed;
     }
+    */
 
     public function complete() {
 
