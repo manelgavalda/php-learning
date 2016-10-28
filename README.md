@@ -20,20 +20,37 @@ $ composer require manelgavalda/php-learning
 
 ## Usage
 
+Create "tests" folder with "index.php" and "database.php" on it.
+
+tests/index.php
 ``` php
-$skeleton = new manelgavalda\php-learning();
-echo $skeleton->echoPhrase('Hello, League!');
+<?php
+
+use Manelgavalda\Myframework\core\Request;
+use Manelgavalda\Myframework\core\Router;
+
+require __DIR__ .'/../vendor/manelgavalda/php-learning/src/core/bootstrap.php';
+require Router::load(__DIR__ .'/../vendor/manelgavalda/php-learning/src/controllers/routes.php')->direct(Request::uri());
+
 ```
 
+tests/database.php
+``` php
+<?php
+
+//Modificar indicant les teves variables d'entorn.
+
+return [
+    'dbtype'      => 'mysql',
+    'dbname'     => 'prova',
+    'username' => '',
+    'password' => '',
+    'dbhost' => '127.0.0.1'
+];
+```
 ## Change log
 
 Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
-
-## Testing
-
-``` bash
-$ composer test
-```
 
 ## Contributing
 
